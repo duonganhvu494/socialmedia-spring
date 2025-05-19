@@ -8,6 +8,9 @@ import org.springframework.http.HttpStatusCode;
 public enum ErrorCode {
     UNCATEGORIZED_EXCEPTION(1, "Lỗi hệ thống!", HttpStatus.INTERNAL_SERVER_ERROR),
     INVALID_ENUM_VALUE(1, "Giá trị enum không hợp lệ", HttpStatus.BAD_REQUEST),
+    USER_EXISTED(1,"Người dùng đã tồn tại", HttpStatus.BAD_REQUEST),
+    USER_NON_EXISTED(1,"Không tìm thấy người dùng", HttpStatus.BAD_REQUEST),
+    INVALID_PASSWORD(1, "Mật khẩu không chính xác" , HttpStatus.BAD_REQUEST),
 
     ;
 
